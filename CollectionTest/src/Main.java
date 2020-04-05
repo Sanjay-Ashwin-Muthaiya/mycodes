@@ -3,8 +3,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
-public class Main {
 
+
+public class Main
+{
 	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
@@ -35,19 +37,19 @@ public class Main {
 		
 		// apply your code here...
 
-		for(Artist x:list)
-		{
-			System.out.println(x);
-		}
-	}
-
+for(Artist x: list)		
+{
+System.out.println(x);
+}
+for(Artist x: Collections.sort(list, new Sortbydob));
+{
+System.out.println(x);
+}
+for(Artist x: Collections.sort(list, new Sortbygender));
+{
+System.out.println(x);
 }
 
 
-
-
-
-
-
-
-
+}
+}

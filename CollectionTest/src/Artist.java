@@ -1,7 +1,8 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.*;
 
-public class Artist {
+public class Artist{
 	String name;
 	String role;
 	String gender;
@@ -15,7 +16,7 @@ public class Artist {
 	}
 	public Artist() {
 		super();
-		// TODO Auto-generated constructor stub
+		    // //TODO Auto-generated constructor stub
 	}
 	public String getName() {
 		return name;
@@ -47,4 +48,22 @@ public class Artist {
 	}
 
 	//apply your code here...
+ 
+public class Sortbygender implements Comparator<Artist> 
+{ 
+   
+    public int compare(Artist a, Artist b) 
+    { 
+        return a.gender.compareTo(b.gender); 
+    } 
+} 
+
+public class Sortbydob implements Comparator<Artist>
+{ 
+   
+    public int compare(Artist a, Artist b) 
+    { 
+        return a.dob.compareTo(b.dob); 
+    } 
+} 
 }
